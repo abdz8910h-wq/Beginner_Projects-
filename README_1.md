@@ -12,7 +12,11 @@ A sweeping ultrasonic "sonar" built on an Arduino UNO. A servo continuously rota
      On GitHub you can also drag-and-drop the video straight into this README
      in the web editor and it will host + embed it automatically. -->
 
-![Sonar scanner demo](./media/demo.mp4)
+
+
+https://github.com/user-attachments/assets/9986f90f-1492-4b71-ab42-9463a6895098
+
+
 
 ---
 
@@ -33,11 +37,10 @@ I wanted to build something like a real radar/sonar: a sensor that doesn't just 
 
 | Distance to nearest object | LED lit | Buzzer |
 |----------------------------|---------|--------|
-| **> 40 cm** | `u` — *clear* (far) | silent |
-| **10 – 40 cm** | `t` — *warning* (mid) | 100 Hz tone |
-| **< 10 cm** | `p` — *danger* (close) | 500 Hz tone |
+| **> 40 cm** | `Blue` — *clear* (far) | silent |
+| **10 – 40 cm** | `Green` — *warning* (mid) | 100 Hz tone |
+| **< 10 cm** | `Red` — *danger* (close) | 500 Hz tone |
 
-> ℹ️ **Note on LED labels:** in the code the LEDs are named `p`, `t`, and `u`. I've inferred their meaning from the buzzer behaviour (closer = more urgent), so `p` = close/danger, `t` = mid/warning, `u` = far/clear. Update the colours in the table above to match your actual build.
 
 ### The distance formula
 
@@ -78,6 +81,8 @@ Sound travels at ~0.0343 cm per microsecond. Since the pulse goes **out to the o
 Servo: **red → 5V, brown/black → GND, orange/yellow → pin 3**.
 HC-SR04: **VCC → 5V, GND → GND, Trig → 5, Echo → 6**.
 Each LED: **pin → 220 Ω resistor → LED → GND**.
+
+> ℹ️ **Note on LED labels:** 'p' means Red; 't' means Green; 'u' means BLue
 
 ---
 
