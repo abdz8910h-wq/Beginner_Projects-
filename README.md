@@ -12,7 +12,12 @@ A simple two-player reflex game built on an Arduino UNO. Both players stare at t
      On GitHub you can also drag-and-drop the video straight into this README
      in the web editor and it will host + embed it automatically. -->
 
-![Reaction game demo](./media/demo.mp4)
+
+https://github.com/user-attachments/assets/9d007ec8-98ea-4fe8-81b4-68647ab052e6
+
+
+
+
 
 ---
 
@@ -95,7 +100,6 @@ An unconnected analog pin picks up tiny, unpredictable voltage fluctuations from
 delay(random(900, 4901));   // random hold between 0.9 s and 4.9 s
 ```
 
-> ⚠️ **Fix your uploaded file:** the sketch currently has `RandomSeed(analogRead(A0));` with a **capital R**. Arduino's function is lowercase `randomSeed()` — as written it won't compile (`'RandomSeed' was not declared in this scope`). Change the capital `R` to lowercase and it's good.
 
 ### 2. Making the button logic pick a clear winner
 
